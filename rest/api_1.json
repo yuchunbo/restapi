@@ -1,0 +1,26 @@
+{
+    "/path/to/API1": {
+        "get": {
+            "data": {
+                "msg": "failed",
+                "info": {
+                    "username": "@name",
+                    "age|18-99": 100,
+                    "gender": "@gender"
+                }
+            }
+        }
+    },
+
+    "/path/to/API11": {
+        "post": {
+            "data": {
+                "msg": "failed",
+                "info": {
+                    "username": "John",
+                    "pwd": "1234567890"
+                }
+            }
+        }
+    }
+}
