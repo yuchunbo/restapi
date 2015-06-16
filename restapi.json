@@ -1,0 +1,17 @@
+{
+    "apps" : [{
+        "name"      : "restapi",
+        "script"    : "./node_modules/grunt",
+        "args"        : "['mock']"
+    }],
+    "deploy" : {
+        "production" : {
+            "user" : "root",
+            "host" : "123.56.128.70",
+            "ref"  : "origin/master",
+            "repo" : "git@github.com:yuchunbo/restapi.git",
+            "path" : "/home/yuchunbo/restapi",
+            "post-deploy" : "npm install && pm2 startOrRestart restapi.json --env production"
+        }
+    }
+}
